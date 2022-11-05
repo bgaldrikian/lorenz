@@ -8,6 +8,11 @@ debug_interp = False
 
 def lorenz():
     def f(t, x):    # returns the first derivative of the Lorenz system at time t, coordinates x, with the parameters defined in the function
+
+        # x' = s*(y - x)
+        # y' = x*(r - z) - y
+        # z' = x*y - b*z
+
         r = 126.52
         s = 10.0
         b = 8.0/3.0
